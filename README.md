@@ -6,16 +6,12 @@ Data are sourced from the **MicrobeAtlas platform** ([https://microbeatlas.org](
 
 Based global soil microbiome datasets generated for:
 
-* Reproducible Propagation of Species-Rich Soil Bacterial Communities / Habitat filtering more than microbiota origin controls microbiome transplant outcomes in soil
+* Reproducible Propagation of Species-Rich Soil Bacterial Communities / Habitat filtering more than microbiota origin controls microbiome transplant outcomes in soil (https://zenodo.org/records/15236630)
 
 Along with other global datasets:
 - CHELSA (chelsa.org) for bioclimatic variables
 - Google Earth Engine for topgraphical variables
 - ... for soil and vegetation variables
-
-Access:
-
-* Zenodo : https://zenodo.org/records/15236630
 
 ---
 
