@@ -1,2 +1,5 @@
-data/
-data
+# Ignore all data files (large rasters, CSVs) but track subdirectory structure
+data/**
+!data/
+!data/*/
+!data/**/.gitkeep
