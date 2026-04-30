@@ -1,0 +1,40 @@
+# Conda environment for AlpineSoilMicrobiome geospatial enrichment
+# Create with:
+#   conda env create -f python_topo_climate.yml
+# Activate with:
+#   conda activate alpine-topo-climate
+#
+# Notes:
+# - Uses conda-forge for GDAL/raster stack compatibility.
+# - Google Earth Engine support is optional; authenticate with:
+#     earthengine authenticate
+#   or set up a service account and credentials.
+name: alpine-topo-climate
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - pandas
+  - pyarrow
+  - requests
+  - tqdm
+  - pyyaml
+  - shapely
+  - pyproj
+  - geopandas
+  - rasterio
+  - rioxarray
+  - xarray
+  - scipy
+  - scikit-image
+  - affine
+  - fsspec
+  - s3fs
+  - gdal
+  - rich
+  - pip:
+      # Optional: enables automated NDVI composite generation/export via Google Earth Engine.
+      # If you don't want/need this, you can remove it and instead provide a local NDVI GeoTIFF.
+      - earthengine-api

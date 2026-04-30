@@ -1,5 +1,21 @@
-# Ignore all data files (large rasters, CSVs) but track subdirectory structure
-data/**
-!data/
-!data/*/
-!data/**/.gitkeep
+# Data (large rasters, caches, derived outputs) should remain local
+/data/
+
+# Common large geospatial formats
+*.tif
+*.tiff
+*.img
+*.vrt
+*.nc
+*.grd
+*.asc
+
+# Local env / caches
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+
+# Logs
+*.log
