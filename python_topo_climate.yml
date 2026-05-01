@@ -1,0 +1,34 @@
+# Conda environment for AlpineSoilMicrobiome metadata gathering
+#
+# Create:
+#   conda env create -f python_topo_climate.yml
+# Activate:
+#   conda activate alpine-metadata
+#
+# Notes:
+# - Uses conda-forge for GDAL/raster stack compatibility.
+# - Earth Engine is optional (for NDVI recipe/export workflow).
+name: alpine-metadata
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - pandas
+  - requests
+  - tqdm
+  - pyyaml
+  - rich
+  - shapely
+  - pyproj
+  - geopandas
+  - rasterio
+  - rioxarray
+  - xarray
+  - scipy
+  - scikit-image
+  - affine
+  - gdal
+  - pip:
+      - earthengine-api
