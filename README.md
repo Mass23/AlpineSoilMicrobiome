@@ -9,31 +9,23 @@ Based global soil microbiome datasets generated for:
 * Reproducible Propagation of Species-Rich Soil Bacterial Communities / Habitat filtering more than microbiota origin controls microbiome transplant outcomes in soil (https://zenodo.org/records/15236630)
 
 Along with other global datasets:
-- CHELSA v2.1 (chelsa-climate.org) for bioclimatic variables
-- SRTM v4.1 / ASTER GDEM v3 for topographic variables
-- ESA WorldCover 2021 for land cover
 - SoilGrids v2.0 for soil properties
+- CHELSA v2.1 (chelsa-climate.org) for bioclimatic variables
+- [] for topographic variables
 - NDVI from Moeslund et al. (2022) Ecography doi:10.1111/ecog.05012
 
 ---
 
 ### 🚀 Step 0b — Environmental covariate extraction
 
-`0b_get_climatic_topo_land_data.py` reads `data/sample_data_filtered.csv`
-(produced by `0a_microbeatlas_data.R`) and appends environmental metadata
-for each sample point, writing `data/sample_data_filtered_full.csv`.
 
 #### Installation
 
-```bash
-pip install -r requirements.txt
-```
+
 
 #### Usage
 
-```bash
-python3 0b_get_climatic_topo_land_data.py [--n-cpus 12]
-```
+
 
 #### Data layers added
 
